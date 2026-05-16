@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #070b14;
+  --background: #000000;
   --foreground: #f4f4f5;
 }
 
@@ -23,6 +23,6 @@ body {
 }
 
 ::selection {
-  background: rgba(139, 92, 246, 0.35);
+  background: rgba(6, 182, 212, 0.35);
   color: #fff;
 }

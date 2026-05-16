@@ -11,7 +11,7 @@ export default function Footer() {
           <span className="font-medium text-zinc-300">{siteConfig.name}</span>.
           All rights reserved.
         </p>
-        <p className="text-zinc-600">Built with Next.js & Tailwind CSS</p>
+        <p className="text-zinc-600">Built with Next.js, Tailwind CSS & Vercel</p>
       </div>
     </footer>
   );

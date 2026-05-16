@@ -32,7 +32,7 @@ export default function Typewriter({ words }: { words: string[] }) {
   }, [text, deleting, wordIndex, words]);
 
   return (
-    <span className="inline-block min-w-[12ch] text-violet-400">
+    <span className="inline-block min-w-[10ch] text-cyan-400">
       {text}
       <span className="ml-0.5 animate-pulse text-cyan-400">|</span>
     </span>

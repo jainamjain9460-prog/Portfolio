@@ -17,9 +17,9 @@ export default function Projects() {
           {projects.map((project) => (
             <article
               key={project.title}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.05] to-transparent transition hover:border-cyan-500/30"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-cyan-500/20 bg-black transition hover:border-cyan-500/50"
             >
-              <div className="flex h-40 items-center justify-center bg-gradient-to-br from-violet-900/40 via-[#12182b] to-cyan-900/30">
+              <div className="flex h-40 items-center justify-center bg-black border-b border-cyan-500/20">
                 <span className="text-5xl font-bold text-white/20">
                   {project.title.charAt(0)}
                 </span>
@@ -45,7 +45,7 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="mt-5 flex items-center justify-between">
-                  <span className="rounded-full bg-violet-500/20 px-3 py-1 text-xs font-medium text-violet-300">
+                  <span className="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-400">
                     {project.status}
                   </span>
                   <span className="text-sm font-medium text-zinc-500 group-hover:text-cyan-400">

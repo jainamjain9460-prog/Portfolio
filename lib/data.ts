@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Jainam Jain",
-  title: "Jainam Jain — Portfolio",
+  title: "Jainam Jain Portfolio",
   description:
-    "Aspiring technologist passionate about data science, machine learning, and building impactful applications.",
+    "Aspiring technologist passionate about data science, web development, and building impactful applications.",
   email: "jainamjain9460@gmail.com",
   phone: "+91 63772 18943",
   location: "Udaipur, Rajasthan, India",
@@ -26,11 +26,7 @@ export const roles = [
 export const techStack = [
   {
     category: "Data Science",
-    items: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "PySpark"],
-  },
-  {
-    category: "Machine Learning",
-    items: ["Scikit-learn", "Demand Forecasting", "ML Pipelines", "Model Evaluation"],
+    items: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
   },
   {
     category: "Web Development",
@@ -38,7 +34,7 @@ export const techStack = [
   },
   {
     category: "Tools & Platforms",
-    items: ["Jupyter", "Git", "Dashboards", "SaaS Analytics"],
+    items: ["VS Code", "Git", "PyCharm", "Vercel"],
   },
   {
     category: "Core Strengths",
@@ -50,7 +46,7 @@ export const skills = [
   {
     title: "Python",
     description:
-      "Python for data analysis, machine learning pipelines, and backend applications with Flask.",
+      "Python for data analysis, automation, and backend applications with Flask.",
     icon: "python",
   },
   {
@@ -58,12 +54,6 @@ export const skills = [
     description:
       "Exploratory analysis, visualization, and insight-driven decision making with modern Python tools.",
     icon: "chart",
-  },
-  {
-    title: "Machine Learning",
-    description:
-      "Building predictive models, capstone ML projects, and demand forecasting with PySpark.",
-    icon: "brain",
   },
   {
     title: "React",
@@ -84,16 +74,28 @@ export const skills = [
     icon: "server",
   },
   {
-    title: "PySpark",
+    title: "VS Code",
     description:
-      "Distributed data processing for large-scale prediction and analytics workloads.",
-    icon: "spark",
+      "Primary editor for Python, web, and data science projects with a fast, customizable workflow.",
+    icon: "vscode",
   },
   {
-    title: "Problem Solving",
+    title: "Git",
     description:
-      "Analytical thinking, research skills, and disciplined approach to complex technical challenges.",
-    icon: "puzzle",
+      "Version control for tracking changes, collaborating on code, and managing project history.",
+    icon: "git",
+  },
+  {
+    title: "PyCharm",
+    description:
+      "Python IDE for structured development, debugging, and data-focused project work.",
+    icon: "pycharm",
+  },
+  {
+    title: "Vercel",
+    description:
+      "Deployment platform for hosting and shipping web applications with modern workflows.",
+    icon: "vercel",
   },
 ];
 
@@ -111,7 +113,7 @@ export const projects = [
     tag: "#web-development",
     description:
       "Marketing analytics SaaS platform with performance tracking, dashboards, and usage-based metrics for data-driven campaign decisions.",
-    tech: ["React", "Analytics", "Dashboards", "SaaS"],
+    tech: ["React", "Flask", "Vercel", "Analytics"],
     status: "Capstone",
   },
   {
@@ -158,4 +160,4 @@ export const certifications = [
 ];
 
 export const summary =
-  "Aspiring technologist with a strong foundation in Computer Science and Mathematics, passionate about problem-solving, innovation, and continuous learning. Competitive deadlifter with proven discipline, resilience, and consistency — bringing a focused and analytical mindset to both academics and technology.";
+  "Aspiring technologist with a strong foundation in Computer Science and Mathematics, passionate about problem-solving, innovation, and continuous learning. Competitive deadlifter with proven discipline, resilience, and consistency bringing a focused and analytical mindset to both academics and technology.";

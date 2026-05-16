@@ -3,6 +3,7 @@ import { certifications, education } from "@/lib/data";
 export default function About() {
   return (
     <section id="about" className="py-24">
+
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-14 text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">About Me</h2>
@@ -18,12 +19,13 @@ export default function About() {
               {education.map((item) => (
                 <div
                   key={item.degree}
-                  className="rounded-2xl border border-white/10 bg-white/[0.03] p-5"
+                  className="rounded-2xl border border-cyan-500/20 bg-black/40 p-5"
                 >
                   <p className="font-semibold text-white">{item.school}</p>
                   <p className="mt-1 text-sm text-zinc-400">{item.degree}</p>
+
                   <div className="mt-3 flex items-center gap-4 text-sm">
-                    <span className="rounded-full bg-violet-500/20 px-3 py-1 text-violet-300">
+                    <span className="rounded-full bg-cyan-500/20 px-3 py-1 text-cyan-400">
                       GPA: {item.gpa}
                     </span>
                     <span className="text-zinc-500">{item.location}</span>
@@ -41,7 +43,7 @@ export default function About() {
               {certifications.map((cert) => (
                 <div
                   key={cert.title}
-                  className="rounded-2xl border border-white/10 bg-white/[0.03] p-5"
+                  className="rounded-2xl border border-cyan-500/20 bg-black/40 p-5"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <p className="font-semibold text-white">{cert.title}</p>
@@ -54,20 +56,6 @@ export default function About() {
                   </p>
                 </div>
               ))}
-            </div>
-
-            <div className="mt-8 rounded-2xl border border-white/10 bg-gradient-to-r from-violet-500/10 to-cyan-500/10 p-5">
-              <h4 className="font-semibold text-white">Beyond Code</h4>
-              <ul className="mt-3 space-y-2 text-sm text-zinc-400">
-                <li>
-                  • Active participation in academics and co-curricular activities
-                </li>
-                <li>• Self-learning through online platforms (Udemy & more)</li>
-                <li>
-                  • Competitive deadlifting — discipline, resilience, consistency
-                </li>
-                <li>• Strong interest in technology and software development</li>
-              </ul>
             </div>
           </div>
         </div>

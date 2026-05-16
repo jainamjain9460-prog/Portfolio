@@ -3,12 +3,13 @@ import { skills } from "@/lib/data";
 const iconMap: Record<string, string> = {
   python: "PY",
   chart: "DS",
-  brain: "ML",
   react: "RX",
   viz: "DV",
   server: "FL",
-  spark: "SP",
-  puzzle: "PS",
+  vscode: "VC",
+  git: "GT",
+  pycharm: "PC",
+  vercel: "VR",
 };
 
 export default function Skills() {
@@ -23,13 +24,13 @@ export default function Skills() {
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill) => (
             <article
               key={skill.title}
-              className="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition hover:border-violet-500/40 hover:bg-white/[0.05]"
+              className="group rounded-2xl border border-cyan-500/20 bg-black/40 p-6 transition hover:border-cyan-500/50 hover:bg-black/60"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/20 to-cyan-500/20 text-sm font-bold text-violet-300">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl border border-cyan-500/30 bg-black text-sm font-bold text-cyan-400">
                 {iconMap[skill.icon] ?? "SK"}
               </div>
               <h3 className="text-lg font-semibold text-white">{skill.title}</h3>

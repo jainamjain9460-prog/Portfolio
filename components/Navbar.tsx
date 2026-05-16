@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { navLinks, siteConfig } from "@/lib/data";
+import { navLinks } from "@/lib/data";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -18,18 +18,13 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-white/10 bg-[#0b0f19]/80 backdrop-blur-xl"
+          ? "border-b border-cyan-500/20 bg-black/90 backdrop-blur-xl"
           : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#home" className="text-lg font-bold tracking-tight text-white">
-          <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-            JJ
-          </span>
-          <span className="ml-2 hidden text-zinc-300 sm:inline">
-            {siteConfig.name.split(" ")[0]}
-          </span>
+        <a href="#home" className="text-lg font-bold tracking-tight text-cyan-400">
+          JJ
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">
@@ -37,7 +32,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm font-medium text-zinc-400 transition-colors hover:text-white"
+                className="text-sm font-medium text-zinc-400 transition-colors hover:text-cyan-400"
               >
                 {link.label}
               </a>
@@ -73,14 +68,15 @@ export default function Navbar() {
       </nav>
 
       {menuOpen && (
-        <div className="border-t border-white/10 bg-[#0b0f19]/95 px-6 py-4 md:hidden">
+
+        <div className="border-t border-cyan-500/20 bg-black px-6 py-4 md:hidden">
           <ul className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="block py-2 text-sm font-medium text-zinc-300 hover:text-white"
+                  className="block py-2 text-sm font-medium text-zinc-300 hover:text-cyan-400"
                 >
                   {link.label}
                 </a>
