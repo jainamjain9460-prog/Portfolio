@@ -101,28 +101,31 @@ export const skills = [
 
 export const projects = [
   {
-    title: "NYC Taxi Demand Prediction",
-    tag: "#machine-learning",
+    title: "Expense Manager",
+    tag: "#python #flask",
     description:
-      "Built a PySpark model predicting taxi demand across zones and time windows. Visualized insights with Python tools for actionable urban mobility patterns.",
-    tech: ["PySpark", "Python", "ML", "Visualization"],
-    status: "Capstone",
+      "Web application for tracking daily expenses, categorizing spending, and reviewing summaries through a Flask backend.",
+    tech: ["Python", "Flask", "HTML", "CSS"],
+    status: "Completed",
+    href: "https://github.com/jainamjain9460-prog/Expense-Manger",
   },
   {
-    title: "Dash-AI",
+    title: "Password Manager",
+    tag: "#python #flask",
+    description:
+      "Secure password storage and retrieval tool built with Python and Flask for managing credentials in one place.",
+    tech: ["Python", "Flask"],
+    status: "Completed",
+    href: "https://github.com/jainamjain9460-prog/Password-Manager",
+  },
+  {
+    title: "Portfolio",
     tag: "#web-development",
     description:
-      "Marketing analytics SaaS platform with performance tracking, dashboards, and usage-based metrics for data-driven campaign decisions.",
-    tech: ["React", "Flask", "Vercel", "Analytics"],
-    status: "Capstone",
-  },
-  {
-    title: "Data Visualization Dashboard",
-    tag: "#data-visualization",
-    description:
-      "Interactive dashboard for dataset exploration and charting with structured visualizations powered by Seaborn and modern chart tooling.",
-    tech: ["Python", "Seaborn", "Dashboards", "EDA"],
-    status: "Capstone",
+      "Personal portfolio site showcasing projects, skills, education, and contact information with a responsive modern UI.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    status: "Live",
+    href: "https://github.com/jainamjain9460-prog/Portfolio",
   },
 ];
 
@@ -130,13 +133,13 @@ export const education = [
   {
     school: "St. Paul's Senior Secondary School",
     degree: "CBSE — Senior Secondary Education (Class 12)",
-    gpa: "85.4%",
+    percentage: "85.4%",
     location: "India",
   },
   {
     school: "St. Paul's Senior Secondary School",
     degree: "CBSE — Secondary Education (Class 10)",
-    gpa: "84.6%",
+    percentage: "84.6%",
     location: "India",
   },
 ];

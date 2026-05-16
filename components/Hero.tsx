@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { roles, siteConfig, summary, techStack } from "@/lib/data";
 import Typewriter from "./Typewriter";
 
@@ -63,14 +64,14 @@ export default function Hero() {
         </div>
 
         <div className="flex justify-center lg:justify-end">
-          <div className="relative">
-            <div className="absolute -inset-4 rounded-full bg-cyan-500/20 blur-2xl" />
-            <div className="relative flex h-72 w-72 items-center justify-center rounded-full border border-cyan-500/30 bg-black shadow-2xl sm:h-80 sm:w-80">
-              <div className="flex h-56 w-56 items-center justify-center rounded-full border border-cyan-500/20 bg-black text-7xl font-bold text-cyan-400 sm:h-64 sm:w-64">
-                JJ
-              </div>
-            </div>
-          </div>
+          <Image
+            src="/avatar.png"
+            alt={`${siteConfig.name} avatar`}
+            width={576}
+            height={1024}
+            priority
+            className="h-auto w-44 object-contain sm:w-52 lg:w-60"
+          />
         </div>
       </div>
     </section>

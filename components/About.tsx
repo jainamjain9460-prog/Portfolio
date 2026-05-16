@@ -26,7 +26,7 @@ export default function About() {
 
                   <div className="mt-3 flex items-center gap-4 text-sm">
                     <span className="rounded-full bg-cyan-500/20 px-3 py-1 text-cyan-400">
-                      GPA: {item.gpa}
+                      Percentage: {item.percentage}
                     </span>
                     <span className="text-zinc-500">{item.location}</span>
                   </div>
